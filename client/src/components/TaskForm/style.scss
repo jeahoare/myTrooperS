@@ -1,0 +1,15 @@
+.form-task {
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 20px;
+
+  textarea, input {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"]:hover {
+    cursor: pointer;
+  }
+}

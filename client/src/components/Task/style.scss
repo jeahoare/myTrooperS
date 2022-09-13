@@ -1,0 +1,76 @@
+.task-item {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 14px;
+  .flag  {
+    color: #1b3f60;
+    align-self: self-end;
+    margin-right: 15px;
+  }
+  > div {
+    display: flex;
+    flex-wrap: nowrap;
+
+    text-align: left;
+    padding: 2px 0px;
+    background-color: #1b3f60;
+    span {
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 0px 5px;
+      align-self: center;
+    }
+  }
+  .comment {
+    text-align: left;
+    white-space: pre-wrap;
+    background-color: white;
+    border-radius: 0 0 15px 0px;
+    padding: 10px;
+    div {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      button {
+        background-color: white;
+        margin: 3px;
+        font-size: 20px;
+        color: #1b3f60;
+        border: none;
+      }
+      .trash {
+        font-size: 20px;
+        color: red;
+        align-self: center;
+        .loader {
+          color: blue;
+          cursor: initial;
+        }
+      }
+      .follow-btn {
+        width: 100px;
+        font-size: 14px;
+      }
+    }
+    button:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .loader {
+      animation: loader-spin infinite 2s linear;
+  }
+}
+
+@keyframes loader-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,40 @@
+.tasks-manager {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+
+  .raw {
+    display: flex;
+    flex-wrap: nowrap;
+    button {
+      white-space: nowrap;
+    }
+    label {
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-size: 1rem;
+      align-self: center;
+      font-weight: 500;
+    }
+    input[type="checkbox"] {
+      margin: 0px 20px 0 5px;
+      align-self: center;
+    }
+  }
+  input {
+    padding: 10px;
+  }
+  input:first-child {
+    width: 100%;
+    margin-right: 20px;
+  }
+  button:hover, input[type="checkbox"] {
+    cursor: pointer;
+  }
+}
+.raw:last-child {
+  margin-top: 10px;
+  align-self: self-end;
+}

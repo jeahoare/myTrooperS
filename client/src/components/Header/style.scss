@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 20px 0;
+  background-color: #1b3f60;
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    > span {
+      overflow: hidden;
+      display: block;
+
+      color: #db751c;
+
+      &:nth-child(2) span {
+        animation-delay: 1000ms;
+      }
+      &:nth-child(3) span {
+        animation-delay: 2000ms;
+      }
+
+      > span {
+        font-size: 2rem;
+        margin: 3px 0;
+        line-height: 1;
+        font-weight: 500;
+        display: block;
+        animation: spanFadeIn 500ms forwards;
+        transform: translateY(100%);
+      }
+    }
+  }
+  .typing {
+    display: flex;
+    justify-content: center;
+
+    .typing-effect {
+      width: 130px;
+      animation: typing 2s steps(15) 2.5s forwards;
+      white-space: nowrap;
+      overflow: hidden;
+      font-family: monospace;
+      font-size: 1rem;
+
+      color: transparent;
+    }
+  }
+}
+
+@keyframes spanFadeIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0px;
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}

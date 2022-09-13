@@ -1,0 +1,19 @@
+.auth-page {
+  padding: 40px 20px;
+  max-width: 400px;
+  width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"]:hover {
+      cursor: pointer;
+    }
+  }
+}
